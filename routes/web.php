@@ -15,3 +15,7 @@ Route::get('/Task/{task}/edit', [TasksController::class, 'edit'])->name('Task.ed
 Route::put('/Task/{task}', [TasksController::class, 'update'])->name('Task.update');
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
