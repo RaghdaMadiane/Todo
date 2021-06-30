@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://c1.wallpaperflare.com/preview/742/346/328/pattern-wood-retro-desktop.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+}
