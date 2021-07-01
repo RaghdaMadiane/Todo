@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Task;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TaskFactory extends Factory
@@ -21,8 +22,11 @@ class TaskFactory extends Factory
      */
     public function definition()
     {
+        $user=User::factory()->create();
         return [
-            //
+            'user_id'=>$user->id,
+            'name'=>$this->faker->name,
+
         ];
     }
 }
